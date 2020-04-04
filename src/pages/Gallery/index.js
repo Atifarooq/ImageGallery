@@ -1,5 +1,5 @@
 import React from 'react';
-import { Figure, Asidebar, Flex } from '../components';
+import { Figure, Asidebar, Flex } from '../../components';
 
 const Gallery = () => {
   return (
@@ -15,7 +15,7 @@ const Gallery = () => {
       </Flex>
 
       <Asidebar>
-        
+
       </Asidebar>
     </Flex>
   );

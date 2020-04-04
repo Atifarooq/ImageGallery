@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Asidebar, Figure } from '../components';
+import { Flex, Asidebar, Figure } from '../../components';
 
 const GalleryImage = () => {
   return (

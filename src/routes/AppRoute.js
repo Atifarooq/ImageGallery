@@ -1,8 +1,7 @@
 import React, { Fragment, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Gallery from '../pages/Gallery';
-import GalleryImage from '../pages/GalleryImage';
+import { Gallery, GalleryImage } from '../pages';
 
 const AppRoute = () => {
 
