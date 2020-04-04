@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { Figure, Asidebar, Flex } from '../../components';
+import Filter from "./Filter";
 
 const Gallery = () => {
   return (
@@ -15,7 +17,7 @@ const Gallery = () => {
       </Flex>
 
       <Asidebar>
-
+        <Filter />
       </Asidebar>
     </Flex>
   );
