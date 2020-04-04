@@ -2,7 +2,7 @@ import React, { Fragment, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Gallery from '../pages/Gallery';
-import ImageDetail from '../pages/ImageDetail';
+import GalleryImage from '../pages/GalleryImage';
 
 const AppRoute = () => {
 
@@ -12,7 +12,7 @@ const AppRoute = () => {
                 <Suspense fallback={<p>Loading...</p>}>
                     <Switch>
                         <Route path="/" exact component={Gallery} />
-                        <Route path="/detail/:id" exact component={ImageDetail} />
+                        <Route path="/image" exact component={GalleryImage} />
                     </Switch>
                 </Suspense>
             </BrowserRouter>

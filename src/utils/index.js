@@ -5,8 +5,8 @@ export const isPromise = value => {
     return false;
 }
 
-export const ActionType = {
+export const ActionType = Object.freeze({
     Pending: 'PENDING',
     Fulfilled: 'FULFILLED',
     Rejected: 'REJECTED',
-};
+});
