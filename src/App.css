@@ -33,10 +33,14 @@
 .asidebar {
   display: flex;
   background: rgba(0, 0, 0, 0.2);
-  height: calc(100vh - 60px);
+  height: calc(100vh - 65px);
   width: 20rem;
   flex: 0 0 20rem;
   box-shadow: inset 0px 0px 1px #000;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 80px;
 }
 
 /* Block */
@@ -65,30 +69,90 @@
   flex-direction: column;
 }
 
+.flex--rgap {
+  margin-right: 20rem;
+}
+
+.flex--tgap {
+  margin-top: 80px;
+}
+
 /* Block */
 .figure {
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   justify-content: space-between;
-  box-shadow: inset 0px 0px 5px #000;
-  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  width: 10rem;
 }
 
 /* __Element */
 .figure__image {
   width: 10rem;
-  height: 10rem;
+  height: auto;
   align-self: center;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 /* __Element */
 .figure__caption {
   padding: 0.5rem;
+  font-size: 0.8rem;
   background-color: rgba(255, 255, 255, 0.1);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
 }
+
+/* .figure__caption:hover {
+  text-overflow: unset;
+  white-space: normal;
+  overflow: visible;
+} */
 
 /* --Modifier */
 .figure--lg {
   padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Block */
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+/* __Element */
+.form__fieldset {
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  background-color: #2e3035;
+  padding: 1rem 2rem;
+}
+
+.form__fieldset__legend {
+  padding: 5px;
+  background: #25262a;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 100px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Block */
+.radiopill {
+  display: inline-block;
+  width: calc(100% / 2 - 0.5rem);
+  padding: 0.15rem;
 }

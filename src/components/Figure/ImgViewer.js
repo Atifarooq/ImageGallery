@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 const ImgViewer = ({ className, src }) => {
+
+
+
     return (
         <img className={className} alt="image thumbnail" src={src} />
     );

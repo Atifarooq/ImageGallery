@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const FigureCaption = ({ className, caption }) => {
     return (
-        <figcaption className={className}>{caption}</figcaption>
+        <figcaption className={className}>{caption || 'Loading...'}</figcaption>
     );
 };
 

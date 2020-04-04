@@ -10,7 +10,7 @@ export const galleryReducer = (state = initialTGalleryState, action) => {
     switch (action.type) {
         case GALLERY_PENDING:
             return { ...state, loading: true };
-        case GALLERY_FULFILLED:
+        case GALLERY_FULFILLED:            
             return { ...state, gallery: action.payload, loading: false };
         case GALLERY_REJECTED:
             return { ...state, error: action.payload, loading: false };

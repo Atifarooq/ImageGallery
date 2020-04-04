@@ -8,3 +8,5 @@ export const IMAGE = 'IMAGE';
 export const IMAGE_PENDING = 'IMAGE_PENDING';
 export const IMAGE_FULFILLED = 'IMAGE_FULFILLED';
 export const IMAGE_REJECTED = 'IMAGE_REJECTED';
+
+export const FILTER_CHANGED = 'FILTER_CHANGED';

@@ -12,10 +12,10 @@ class GalleryService {
     }
 
     getGallery = async request => {
-
         try {
-            const response = await http.get(`${ORDER_SERVICE}/order-service/consumers/1654/${request.consumerMobilePhone}`);
-            return response.data;
+            const { section, sort, window } = request;
+            const response = await http.get(`https://api.imgur.com/3/gallery/${section}/${sort}/${window}/1?showViral=true&mature=true&album_previews=true`);
+            return response.data.data;
         } catch (error) {
             throw (error.response || error.message);
         }
@@ -23,7 +23,7 @@ class GalleryService {
 
     getImage = async request => {
         try {
-            const response = await http.get(`${ORDER_SERVICE}/order-service/get-orders/${request.id}`);
+            const response = await http.get(`/order-service/get-orders`);
             return response.data;
         } catch (error) {
             throw (error.response || error.message);

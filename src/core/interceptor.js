@@ -4,7 +4,10 @@
   * @param {*} request {HttpRequest}
   * @return {null} 
   */
-const tokenInterceptor = request => console.log(request);
+const tokenInterceptor = request => {
+  request.headers.Authorization = `Client-ID 286fde1ed3f5f1b`;
+  return request;
+}
 
 /**
   * @description get response
@@ -22,7 +25,7 @@ const successInterceptor = response => console.log(`Success Interceptor:: ${resp
 const errorInterceptor = error => console.error(`Error Interceptor:: ${error}`);
 
 export {
-    tokenInterceptor,
-    successInterceptor,
-    errorInterceptor
+  tokenInterceptor,
+  successInterceptor,
+  errorInterceptor
 };

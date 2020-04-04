@@ -1,4 +1,4 @@
-import { GALLERY, IMAGE } from "../../constants/actionTypes";
+import { GALLERY, IMAGE, FILTER_CHANGED } from "../../constants/actionTypes";
 import galleryService from "../../services/gallery.service";
 
 export const getImages = request => async dispatch => {
@@ -13,4 +13,11 @@ export const getImageById = request => async dispatch => {
         type: IMAGE,
         payload: galleryService.getImage(request)
     });
+}
+
+export const filterChanged = filter => {
+    return {
+        type: FILTER_CHANGED,
+        payload: filter
+    };
 }
