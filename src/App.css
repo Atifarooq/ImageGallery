@@ -78,7 +78,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  padding-top: 80px;
+  padding-top: 65px;
 }
 
 /* Block */
@@ -144,6 +144,7 @@ body {
   flex-direction: column;
   flex: 1 1 auto;
   padding: 1rem;
+  background-color: #1F2125;
 }
 
 /* __Element */
