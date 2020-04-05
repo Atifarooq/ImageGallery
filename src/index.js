@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { render } from 'react-dom';
 import './index.css';
 import App from './App';
@@ -11,9 +11,11 @@ import store from './state/store';
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
-        <Route path="/" component={App} />
-      </BrowserRouter>
+      <Suspense fallback={<p>Loading...</p>}>
+        <BrowserRouter>
+          <Route path="/" component={App} />
+        </BrowserRouter>
+      </Suspense>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
