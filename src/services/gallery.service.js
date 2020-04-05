@@ -21,10 +21,10 @@ class GalleryService {
         }
     }
 
-    getImage = async request => {
+    getImageById = async id => {
         try {
-            const response = await http.get(`/order-service/get-orders`);
-            return response.data;
+            const response = await http.get(`https://api.imgur.com/3/gallery/album/${id}`);
+            return response.data.data;
         } catch (error) {
             throw (error.response || error.message);
         }

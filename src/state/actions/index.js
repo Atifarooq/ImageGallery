@@ -11,7 +11,7 @@ export const getImages = request => async dispatch => {
 export const getImageById = request => async dispatch => {
     dispatch({
         type: IMAGE,
-        payload: galleryService.getImage(request)
+        payload: galleryService.getImageById(request)
     });
 }
 

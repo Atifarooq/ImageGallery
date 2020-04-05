@@ -11,7 +11,7 @@ const AppRoute = () => {
                 <Suspense fallback={<p>Loading...</p>}>
                     <Switch>
                         <Route path="/" exact component={Gallery} />
-                        <Route path="/image" exact component={GalleryImage} />
+                        <Route path="/image/:id" exact component={GalleryImage} />
                     </Switch>
                 </Suspense>
             </BrowserRouter>
