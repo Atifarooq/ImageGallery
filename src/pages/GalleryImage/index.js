@@ -11,7 +11,7 @@ const GalleryImage = ({ match }) => {
     const id = match.params.id;
     const album = useSelector(state => state.imageReducer.image);
     const dispatch = useDispatch();
-
+    
     useEffect(() => {
         dispatch(getImageById(id));
     }, [id]);
