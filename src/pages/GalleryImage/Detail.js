@@ -7,7 +7,7 @@ const Detail = () => {
     const album = useSelector(state => state.imageReducer.image);
 
     return (
-        <article className="article">
+        <article className="flex article">
             <h2 className="article__title">{album.title}</h2>
             <p>{album.description || 'description is not available for this image.'}</p>
 

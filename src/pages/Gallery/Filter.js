@@ -12,7 +12,7 @@ const Filter = () => {
     const onChanged = event => dispatch(filterChanged({ ...filter, [event.target.name]: event.target.value }));
 
     return (
-        <form className="form">
+        <form className="flex form">
             <FormGroup label="Section">
                 <RadioGroup list={Sections} name="section" filter={filter} onChange={onChanged} />
             </FormGroup>

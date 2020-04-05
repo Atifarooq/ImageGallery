@@ -3,18 +3,22 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getImageById } from "../../state/actions";
 
-import { Flex, Asidebar, Figure } from '../../components';
+import { Flex, Asidebar, Figure, Spinner } from '../../components';
 import Detail from './Detail';
 
 const GalleryImage = ({ match }) => {
 
     const id = match.params.id;
     const album = useSelector(state => state.imageReducer.image);
+    const loading = useSelector(state => state.imageReducer.loading);
     const dispatch = useDispatch();
-    
+
     useEffect(() => {
         dispatch(getImageById(id));
     }, [id]);
+
+    if (loading)
+        return (<Spinner />);
 
     return (
         <Flex className="flex--row flex--tgap">

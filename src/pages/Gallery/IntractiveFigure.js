@@ -4,7 +4,7 @@ import { Figure } from '../../components';
 
 const IntractiveFigure = ({ image }) => {
     return (
-        <NavLink className="intractive" to={`image/${image.id}`}>
+        <NavLink className="flex intractive" to={`image/${image.id}`}>
             <Figure src={(image.is_album && image.images_count) ? image.images[0].link : image.link} caption={image.title} />
         </NavLink>
     );

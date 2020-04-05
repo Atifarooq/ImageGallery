@@ -6,7 +6,7 @@ import FigureCaption from './FigureCaption';
 
 const Figure = ({ src, caption, className }) => {
     return (
-        <figure className={`figure ${className}`}>
+        <figure className={`flex figure ${className}`}>
             <Thumbnail className="figure__image" src={src} />
             <FigureCaption className="figure__caption" caption={caption} />
         </figure>

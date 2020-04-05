@@ -1,47 +1,7 @@
-/* Block */
-.topbar {
-  display: flex;
-  background-color: #5e58cb;
-  color: #fff;
-  padding: 1rem;
-  box-shadow: 0 0 5px #000000;
-}
+@import './style/_variable.css';
 
-/* __Element */
-.topbar__brand {
-  display: flex;
-  font-weight: normal;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.25rem;
-  text-shadow: 0px 0px 3px #000;
-}
-
-.tobar__brand__logo {
-  width: 2rem;
-  margin-right: 0.5rem;
-}
-
-/* --Modifier */
-.topbar--sticky {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 9;
-}
-
-/* Block */
-.asidebar {
-  display: flex;
-  background: rgba(0, 0, 0, 0.2);
-  height: calc(100vh - 65px);
-  width: 20rem;
-  flex: 0 0 20rem;
-  box-shadow: inset 0px 0px 1px #000;
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding-top: 80px;
+body {
+  background-color: var(--bg-body);
 }
 
 /* Block */
@@ -79,8 +39,50 @@
 }
 
 /* Block */
+.topbar {
+  background-color: var(--bg-topbar);
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 5px #000000;
+}
+
+/* __Element */
+.topbar__brand {
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  text-shadow: 0px 0px 3px #000;
+}
+
+.tobar__brand__logo {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* --Modifier */
+.topbar--sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+/* Block */
+.asidebar {
+  background: rgba(0, 0, 0, 0.2);
+  height: calc(100vh - 65px);
+  width: 20rem;
+  flex: 0 0 20rem;
+  box-shadow: inset 0px 0px 1px #000;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 80px;
+}
+
+/* Block */
 .intractive {
-  display: flex;
   width: 14rem;
   flex-wrap: wrap;
   text-decoration: none;
@@ -94,7 +96,6 @@
 
 /* Block */
 .figure {
-  display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   justify-content: space-between;
@@ -140,7 +141,6 @@
 
 /* Block */
 .form {
-  display: flex;
   flex-direction: column;
   flex: 1 1 auto;
   padding: 1rem;
@@ -175,7 +175,6 @@
 
 /* Block */
 .article {
-  display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
@@ -189,7 +188,6 @@
 /* Block */
 .media {
   margin-bottom: 0.05rem;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #2e3035;
