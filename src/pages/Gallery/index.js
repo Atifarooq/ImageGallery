@@ -8,7 +8,7 @@ const Gallery = () => {
   return (
     <Flex className="flex--row flex--tgap">
 
-      <Flex className="flex--row flex--wrap flex--grow flex--rgap">
+      <Flex className="flex--row flex--wrap flex--grow pt-2">
         <ListView />
       </Flex>
 

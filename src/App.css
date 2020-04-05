@@ -4,6 +4,10 @@ body {
   background-color: var(--bg-body);
 }
 
+.pt-2 {
+  padding-top: 1rem;
+}
+
 /* Block */
 .flex {
   display: flex;
@@ -35,7 +39,7 @@ body {
 }
 
 .flex--tgap {
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
 /* Block */
@@ -75,10 +79,6 @@ body {
   width: 20rem;
   flex: 0 0 20rem;
   box-shadow: inset 0px 0px 1px #000;
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding-top: 65px;
 }
 
 /* Block */

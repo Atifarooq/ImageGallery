@@ -23,7 +23,7 @@ const GalleryImage = ({ match }) => {
     return (
         <Flex className="flex--row flex--tgap">
 
-            <Flex className="flex--row flex--wrap flex--grow flex--rgap">
+            <Flex className="flex--row flex--wrap flex--grow">
                 <Figure className="figure--lg" src={(album.is_album && album.images_count) ? album.images[0].link : album.link} caption={album.title} />
             </Flex>
 
