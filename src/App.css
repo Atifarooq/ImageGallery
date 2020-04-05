@@ -143,7 +143,7 @@ body {
 .form {
   flex-direction: column;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: #1F2125;
 }
 
