@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { render } from 'react-dom';
 import './index.css';
 import App from './App';
+import Spinner from './components/Spinner';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -11,7 +12,7 @@ import store from './state/store';
 render(
   <React.StrictMode>
     <Provider store={store}>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Spinner />}>
         <BrowserRouter>
           <Route path="/" component={App} />
         </BrowserRouter>

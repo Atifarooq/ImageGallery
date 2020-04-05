@@ -1,9 +1,9 @@
 import Figure from './Figure';
 import FigureCaption from './FigureCaption';
-import ImgViewer from './ImgViewer';
+import Thumbnail from './Thumbnail';
 
 export {
     Figure,
     FigureCaption,
-    ImgViewer
+    Thumbnail
 };
