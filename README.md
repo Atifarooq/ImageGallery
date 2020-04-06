@@ -1,3 +1,6 @@
+![Image of Yaktocat](https://github.com/Atifarooq/ImageGallery/blob/master/public/IMG-1.PNG)
+![Image of Yaktocat](https://github.com/Atifarooq/ImageGallery/blob/master/public/IMG-2.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
